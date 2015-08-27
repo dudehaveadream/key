@@ -1,0 +1,24 @@
+body {
+  font-size: 14px;
+}
+
+.container {
+	width: 1170px;
+	margin: auto;
+}
+
+::-webkit-input-placeholder {
+  color: #999999;
+}
+
+::-moz-placeholder {
+  color: #999999;
+}
+
+:-moz-placeholder {
+  color: #999999;
+}
+
+:-ms-input-placeholder {
+  color: #999999;
+}
