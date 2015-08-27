@@ -74,7 +74,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   font-size: 14px;
   font-family: 'Helios Regular';
-<<<<<<< HEAD
 }
 
 * {
@@ -82,8 +81,6 @@ body {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-=======
->>>>>>> 2e13caab0b043150603d68ee099a7b23ab790133
 }
 
 .container {
@@ -199,6 +196,7 @@ body {
 }
 .footer .footer-contacts .phone-contacts {
   padding-left: 35px;
+  width: 280px;
 }
 .footer .socials-f {
   float: right;
