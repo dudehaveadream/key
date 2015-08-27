@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'Helios Regular';
+    src: url('../fonts/Helios Regular.eot');
+    src: url('../fonts/Helios Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Helios Regular.woff') format('woff'),
+         url('../fonts/Helios Regular.ttf') format('truetype'),
+         url('../fonts/Helios Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helios Bold';
+    src: url('../fonts/Helios Bold.eot');
+    src: url('../fonts/Helios Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Helios Bold.woff') format('woff'),
+         url('../fonts/Helios Bold.ttf') format('truetype'),
+         url('../fonts/Helios Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  font-size: 14px;
+  	font-size: 14px;
+  	font-family: 'Helios Regular';
 }
 * {
   @include box-sizing(border-box);
