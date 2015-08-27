@@ -21,7 +21,7 @@
 }
 body {
   	font-size: 14px;
-  	font-family: 'Helios Regular';
+  	font-family: $regular;
 }
 * {
   @include box-sizing(border-box);
@@ -49,7 +49,7 @@ body {
 
 .main-contacts {
   display: table;
-  font-family: 'Helios Bold';
+  font-family: $bold;
 
   &_item {
     display: table-cell;
@@ -79,8 +79,8 @@ body {
   }
 
   .group-contacts {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 
     &:first-of-type {
       margin-top: 0;
@@ -100,7 +100,7 @@ body {
 
 
     span {
-      font-family: 'Helios Regular';
+      font-family: $regular;
       margin-right: 8px;
     }
   }
