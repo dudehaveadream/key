@@ -1,0 +1,38 @@
+.footer {
+  border-top: 5px solid #a24501;
+  background: #6e2f01;
+  padding: 15px 0;
+
+  .container {
+    @include clearfix;
+  }
+
+  .footer-contacts {
+    float: left;
+    color: #fff;
+
+    .main-contacts_item {
+      border-right-color: #a1785a;
+      vertical-align: top;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .time-contacts {
+      padding-top: 20px;
+    }
+
+    .address-contacts {
+      width: 345px;
+      padding-left: 40px;
+    }
+
+    .phone-contacts {
+      padding-left: 35px;
+    }
+  }
+
+  .socials-f {
+    float: right;
+  }
+}

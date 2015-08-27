@@ -13,6 +13,14 @@
           border-radius: $radius;
 }
 
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+     -moz-box-sizing: $sizing;
+      -ms-box-sizing: $sizing;
+          box-sizing: $sizing;
+}
+
+
 @mixin background-size($size) {
   -webkit-background-size: $size;
      -moz-background-size: $size;

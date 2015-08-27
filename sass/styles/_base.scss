@@ -1,7 +1,9 @@
 body {
   font-size: 14px;
 }
-
+* {
+  @include box-sizing(border-box);
+}
 .container {
 	width: 1170px;
 	margin: auto;
@@ -22,3 +24,56 @@ body {
 :-ms-input-placeholder {
   color: #999999;
 }
+
+.main-contacts {
+  display: table;
+
+  &_item {
+    display: table-cell;
+    border-right: 1px solid #000000;
+
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .time-contacts {
+    width: 210px;
+    font-size: 16px;
+  }
+
+  .address-contacts {
+    width: 280px;
+    font-size: 17px;
+    padding-left: 30px;
+  }
+
+  .phone-contacts {
+    width: 265px;
+    font-size: 22px;
+    padding-left: 25px;
+  }
+
+  .group-contacts {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &_img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+
+  .text-section {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+}
+
