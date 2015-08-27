@@ -1,0 +1,87 @@
+.sidebar {
+
+	&-catalog {
+		margin-bottom: 20px;
+		ul.sidebar-nav {
+		padding: 15px 0;
+		background: #515151;
+			> li {
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					left: 16px;
+					top: 11px;
+					width: 6px;
+					height: 6px;
+					background: #7e7e7e;
+				}
+				&.open:before {
+					@include border-radius (50%);
+				}
+				> a {
+					padding: 5px 10px 5px 35px;
+					display: block;
+					font-size: 18px;
+					color: $white;
+					text-decoration: none;
+					line-height: 1.2;
+					&:hover {
+						background: #764c2d;
+					}
+				}
+				ul.sidebar-subnav {
+					li {
+						position: relative;
+						&:before {
+							content: '';
+							position: absolute;
+							left: 37px;
+							top: 11px;
+							width: 14px;
+							height: 1px;
+							background: #c8c8c8;
+						}
+						a {
+							padding: 5px 5px 5px 58px;
+							display: block;
+							font-size: 15px;
+							text-decoration: none;
+							color: $white;
+							&:hover {
+								background: #764c2d;
+							}
+						}
+					}
+				}
+			}
+		}
+		.download-pdf {
+			text-align: center;
+			padding: 8px 0;
+			a {
+				font-family: 'Helios Regular';
+				font-size: 18px;
+				color: $black;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&-partners {
+		padding: 25px 0 15px;
+		text-align: center;
+		background: #b26731;
+		h5 {
+			margin-bottom: 20px;
+			color: $white;
+		}
+		a.partner {
+			margin: 7px;
+			display: inline-block;
+		}
+	}
+
+}

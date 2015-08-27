@@ -58,6 +58,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*Mixins*/
 @font-face {
+  font-family: 'Helios Light';
+  src: url("../fonts/Helios Light.eot");
+  src: url("../fonts/Helios Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Helios Light.woff") format("woff"), url("../fonts/Helios Light.ttf") format("truetype"), url("../fonts/Helios Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Helios Regular';
   src: url("../fonts/Helios Regular.eot");
   src: url("../fonts/Helios Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Helios Regular.woff") format("woff"), url("../fonts/Helios Regular.ttf") format("truetype"), url("../fonts/Helios Regular.otf") format("opentype");
@@ -73,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 body {
   font-size: 14px;
-  font-family: 'Helios Regular';
+  font-family: 'Helios Light';
 }
 
 * {
@@ -83,9 +90,32 @@ body {
   box-sizing: border-box;
 }
 
+h5 {
+  font-family: 'Helios Regular';
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .container {
   width: 1170px;
   margin: auto;
+}
+
+.content {
+  padding-top: 25px;
+}
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content .sidebar {
+  width: 275px;
+  float: left;
+}
+.content .main-content {
+  width: 870px;
+  float: right;
 }
 
 ::-webkit-input-placeholder {
@@ -205,4 +235,88 @@ body {
 }
 .footer .socials-f {
   float: right;
+}
+
+.sidebar-catalog {
+  margin-bottom: 20px;
+}
+.sidebar-catalog ul.sidebar-nav {
+  padding: 15px 0;
+  background: #515151;
+}
+.sidebar-catalog ul.sidebar-nav > li {
+  position: relative;
+}
+.sidebar-catalog ul.sidebar-nav > li:before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  background: #7e7e7e;
+}
+.sidebar-catalog ul.sidebar-nav > li.open:before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.sidebar-catalog ul.sidebar-nav > li > a {
+  padding: 5px 10px 5px 35px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.2;
+}
+.sidebar-catalog ul.sidebar-nav > li > a:hover {
+  background: #764c2d;
+}
+.sidebar-catalog ul.sidebar-nav > li ul.sidebar-subnav li {
+  position: relative;
+}
+.sidebar-catalog ul.sidebar-nav > li ul.sidebar-subnav li:before {
+  content: '';
+  position: absolute;
+  left: 37px;
+  top: 11px;
+  width: 14px;
+  height: 1px;
+  background: #c8c8c8;
+}
+.sidebar-catalog ul.sidebar-nav > li ul.sidebar-subnav li a {
+  padding: 5px 5px 5px 58px;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.sidebar-catalog ul.sidebar-nav > li ul.sidebar-subnav li a:hover {
+  background: #764c2d;
+}
+.sidebar-catalog .download-pdf {
+  text-align: center;
+  padding: 8px 0;
+}
+.sidebar-catalog .download-pdf a {
+  font-family: 'Helios Regular';
+  font-size: 18px;
+  color: #000000;
+}
+.sidebar-catalog .download-pdf a:hover {
+  text-decoration: none;
+}
+.sidebar-partners {
+  padding: 25px 0 15px;
+  text-align: center;
+  background: #b26731;
+}
+.sidebar-partners h5 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.sidebar-partners a.partner {
+  margin: 7px;
+  display: inline-block;
 }

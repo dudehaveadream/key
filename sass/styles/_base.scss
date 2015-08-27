@@ -1,4 +1,15 @@
 @font-face {
+    font-family: 'Helios Light';
+    src: url('../fonts/Helios Light.eot');
+    src: url('../fonts/Helios Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Helios Light.woff') format('woff'),
+         url('../fonts/Helios Light.ttf') format('truetype'),
+         url('../fonts/Helios Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Helios Regular';
     src: url('../fonts/Helios Regular.eot');
     src: url('../fonts/Helios Regular.eot?#iefix') format('embedded-opentype'),
@@ -20,15 +31,34 @@
     font-style: normal;
 }
 body {
-  	font-size: 14px;
-  	font-family: 'Helios Regular';
+  font-size: 14px;
+  font-family: 'Helios Light';
 }
 * {
   @include box-sizing(border-box);
 }
+
+h5 {
+  font-family: 'Helios Regular';
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .container {
 	width: 1170px;
 	margin: auto;
+}
+.content {
+  padding-top: 25px;
+  @include clearfix;
+  .sidebar {
+    width: 275px;
+    float: left;
+  }
+  .main-content {
+    width: 870px;
+    float: right;
+  }
 }
 
 ::-webkit-input-placeholder {
