@@ -49,6 +49,7 @@ body {
 
 .main-contacts {
   display: table;
+  font-family: 'Helios Bold';
 
   &_item {
     display: table-cell;
@@ -96,6 +97,12 @@ body {
     display: inline-block;
     vertical-align: middle;
     line-height: 1.2;
+
+
+    span {
+      font-family: 'Helios Regular';
+      margin-right: 8px;
+    }
   }
 }
 
