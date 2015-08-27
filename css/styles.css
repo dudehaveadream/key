@@ -181,6 +181,53 @@ h5 {
   margin-right: 8px;
 }
 
+.main-product {
+  width: 210px;
+  background: #fff;
+  border: 1px solid #b7b7b7;
+}
+.main-product .product-link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.2;
+  height: 335px;
+}
+.main-product .product-img {
+  height: 170px;
+  display: table;
+  width: 100%;
+  background: red;
+}
+.main-product .product-img .product-img_inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.main-product .product-name {
+  color: #212121;
+  font-family: "Helios Regular";
+  padding: 0 12px;
+  margin-top: 10px;
+}
+.main-product .product-text {
+  color: #212121;
+  padding: 0 12px;
+}
+.main-product .product-footer {
+  padding: 0 12px;
+  border-top: 1px solid #cfcfcf;
+}
+.main-product .product-price {
+  font-size: 24px;
+  color: #a24501;
+  font-family: "Helios Regular";
+}
+.main-product .product-count {
+  font-size: 12px;
+  color: #212121;
+}
+
 /* Pages */
 .header-top {
   padding: 10px 0;

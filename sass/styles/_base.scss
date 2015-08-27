@@ -136,3 +136,58 @@ h5 {
   }
 }
 
+.main-product {
+  width: 210px;
+  background: #fff;
+  border: 1px solid #b7b7b7;
+
+  .product-link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.2;
+    height: 335px;
+  }
+
+  .product-img {
+    height: 170px;
+    display: table;
+    width: 100%;
+    background: red;
+
+    .product-img_inner {
+      display: table-cell;
+      text-align: center; 
+      vertical-align: middle;
+    }
+  }
+
+  .product-name {
+    color: #212121;
+    font-family: $bold;
+    padding: 0 12px;
+    margin-top: 10px;
+  }
+
+  .product-text {
+    color: #212121;
+    padding: 0 12px;
+  }
+
+  .product-footer {
+    padding: 0 12px;
+    border-top: 1px solid #cfcfcf;
+  }
+
+  .product-price {
+    font-size: 24px;
+    color: #a24501;
+    font-family: $bold;
+  }
+
+  .product-count {
+    font-size: 12px;
+    color: #212121;
+  }
+}
+
