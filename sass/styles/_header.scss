@@ -9,10 +9,149 @@
 
   .header-contacts {
     float: right;
+    color: #4e4e4e;
 
     .main-contacts_item {
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+  }
+}
+
+.header-bot {
+  background: #a24501;
+  @include clearfix;
+
+  .header-nav {
+    float: left;
+
+    .nav-list {
+      @include clearfix;
+
+      .nav-item {
+        float: left;
+        margin-right: 25px;
+        position: relative;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &_link {
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #fff;
+          display: block;
+          font-family: $bold;
+          text-decoration: none;
+          padding: 15px 5px 11px;
+          @include transition(all, .2s, linear);
+        }
+
+        &:hover {
+
+          .nav-item_link {
+            background: #6e2f01;
+          }
+
+          .dropdown {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      .dropdown {
+        position: absolute;
+        width: 260px;
+        left: 0;
+        top: 100%;
+        background: rgba(255,255,255,.94);
+        padding: 13px 0;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all, .2s, linear);
+        
+        .dropdown-item {
+          margin-top: 3px;
+          margin-bottom: 3px;
+        }
+
+        .dropdown-link {
+          display: block;
+          color: #212121;
+          font-size: 16px;
+          padding: 5px 20px 4px;
+          text-decoration: none;
+          @include transition(all, .2s, linear);
+          line-height: 1.2;
+
+
+          &:hover {
+            color: #864206;
+            background: rgba(0,0,0,.1);
+          }
+        }
+      }
+    }
+  }
+
+  .left-section {
+    float: right;
+
+    .search {
+      display: inline-block;
+      vertical-align: top;
+
+      .search-input_wrap {
+        overflow: hidden;
+        width: 40px;
+        height: 36px;
+        position: relative;
+        margin-right: 5px;
+        margin-top: 4px;
+        border: 1px solid transparent;
+        @include transition(all, .2s, ease-in);
+
+        &.show-input {
+          width: 250px;
+          border-color: #fff;
+        }
+
+        .search-input {
+          display: block;
+          background: none;
+          border: none;
+          width: 100%;
+          padding: 7px 44px 9px 10px;
+          font-size: 16px;
+          color: #fff;
+          outline: none;
+        }
+
+        .search-btn {
+          display: block;
+          width: 40px;
+          height: 34px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background: url(../img/icons/search.png) no-repeat center;
+        }
+      }
+    }
+
+    .request-call {
+      display: inline-block;
+      font-size: 16px;
+      padding: 16px 14px 11px;
+      font-family: $bold;
+      color: #fff;
+      text-decoration: none;
+      background: rgba(0,0,0,.32);
     }
   }
 }
