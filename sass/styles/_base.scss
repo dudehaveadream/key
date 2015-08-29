@@ -30,18 +30,19 @@
     font-weight: normal;
     font-style: normal;
 }
+
+* {
+    @include box-sizing(border-box);
+}
 body {
   	font-size: 14px;
   	font-family: $regular;
 }
-* {
-  @include box-sizing(border-box);
-}
 
 h5 {
-  font-family: $bold;
-  font-size: 18px;
-  text-transform: uppercase;
+    font-family: $bold;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -49,145 +50,122 @@ h5 {
 	margin: auto;
 }
 .content {
-  padding-top: 25px;
-  @include clearfix;
-  .sidebar {
-    width: 275px;
-    float: left;
-  }
-  .main-content {
-    width: 870px;
-    float: right;
-  }
+    padding-top: 25px;
+    @include clearfix;
+    .sidebar {
+        width: 275px;
+        float: left;
+    }
+    .main-content {
+        width: 870px;
+        float: right;
+    }
 }
 
 ::-webkit-input-placeholder {
-  color: #999999;
+    color: #999999;
 }
-
 ::-moz-placeholder {
-  color: #999999;
+    color: #999999;
 }
-
 :-moz-placeholder {
-  color: #999999;
+    color: #999999;
 }
-
 :-ms-input-placeholder {
-  color: #999999;
+    color: #999999;
 }
 
 .main-contacts {
-  display: table;
-  font-family: $bold;
-
-  &_item {
-    display: table-cell;
-    border-right: 1px solid #000000;
-
-
-    &:last-child {
-      border-right: none;
+    display: table;
+    font-family: $bold;
+    &_item {
+        display: table-cell;
+        border-right: 1px solid #000000;
+        &:last-child {
+            border-right: none;
+        }
     }
-  }
-
-  .time-contacts {
-    width: 210px;
-    font-size: 16px;
-  }
-
-  .address-contacts {
-    width: 280px;
-    font-size: 17px;
-    padding-left: 30px;
-  }
-
-  .phone-contacts {
-    width: 265px;
-    font-size: 22px;
-    padding-left: 25px;
-  }
-
-  .group-contacts {
-    margin-top: 18px;
-    margin-bottom: 18px;
-
-    &:first-of-type {
-      margin-top: 0;
+    .time-contacts {
+        width: 210px;
+        font-size: 16px;
     }
-  }
-
-  &_img {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 10px;
-  }
-
-  .text-section {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.2;
-
-
-    span {
-      font-family: $regular;
-      margin-right: 8px;
+    .address-contacts {
+        width: 280px;
+        font-size: 17px;
+        padding-left: 30px;
     }
-  }
+    .phone-contacts {
+        width: 265px;
+        font-size: 22px;
+        padding-left: 25px;
+    }
+    .group-contacts {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    &_img {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+    .text-section {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.2;
+        span {
+            font-family: $regular;
+            margin-right: 8px;
+        }
+    }
 }
 
 .main-product {
-  width: 210px;
-  background: #fff;
-  border: 1px solid #b7b7b7;
-
-  .product-link {
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.2;
-    height: 335px;
-  }
-
-  .product-img {
-    height: 170px;
-    display: table;
-    width: 100%;
-    background: red;
-
-    .product-img_inner {
-      display: table-cell;
-      text-align: center; 
-      vertical-align: middle;
+    width: 210px;
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    .product-link {
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.2;
+        height: 335px;
     }
-  }
-
-  .product-name {
-    color: #212121;
-    font-family: $bold;
-    padding: 0 12px;
-    margin-top: 10px;
-  }
-
-  .product-text {
-    color: #212121;
-    padding: 0 12px;
-  }
-
-  .product-footer {
-    padding: 0 12px;
-    border-top: 1px solid #cfcfcf;
-  }
-
-  .product-price {
-    font-size: 24px;
-    color: #a24501;
-    font-family: $bold;
-  }
-
-  .product-count {
-    font-size: 12px;
-    color: #212121;
-  }
+    .product-img {
+        height: 170px;
+        display: table;
+        width: 100%;
+        background: red;
+        .product-img_inner {
+            display: table-cell;
+            text-align: center; 
+            vertical-align: middle;
+        }
+    }
+    .product-name {
+        color: #212121;
+        font-family: $bold;
+        padding: 0 12px;
+        margin-top: 10px;
+    }
+    .product-text {
+        color: #212121;
+        padding: 0 12px;
+    }
+    .product-footer {
+        padding: 0 12px;
+        border-top: 1px solid #cfcfcf;
+    }
+    .product-price {
+        font-size: 24px;
+        color: #a24501;
+        font-family: $bold;
+    }
+    .product-count {
+        font-size: 12px;
+        color: #212121;
+    }
 }
 

@@ -1,97 +1,79 @@
 .footer {
-  margin-top: 50px;
-  border-top: 5px solid #a24501;
-  background: #6e2f01;
-  padding: 15px 0;
-
-  .container {
-    @include clearfix;
-  }
-
-  .footer-contacts {
-    float: left;
-    color: #fff;
-
-    .main-contacts_item {
-      border-right-color: #a1785a;
-      vertical-align: top;
-      padding-top: 15px;
-      padding-bottom: 15px;
+    margin-top: 50px;
+    border-top: 5px solid #a24501;
+    background: #6e2f01;
+    padding: 15px 0;
+    .container {
+        @include clearfix;
     }
-
-    .time-contacts {
-      padding-top: 20px;
-    }
-
-    .address-contacts {
-      width: 345px;
-      padding-left: 40px;
-    }
-
-    .phone-contacts {
-      padding-left: 35px;
-      width: 280px;
-    }
-  }
-
-  .socials-f {
-    float: right;
-    padding-top: 15px;
-    text-align: center;
-
-    .social-text {
-      font-size: 12px;
-      color: #fff;
-    }
-
-    .socials-inner {
-      margin-top: 15px;
-    }
-
-    .social {
-      margin-left: 2px;
-      width: 31px;
-      height: 30px;
-      display: inline-block;
-      background: url(../img/icons/socials-f.png);
-
-      &.vk {
-        &:hover {
-          background-position: 0 -30px;
+    .footer-contacts {
+        float: left;
+        color: #fff;
+        .main-contacts_item {
+            border-right-color: #a1785a;
+            vertical-align: top;
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
-      }
-
-      &.fb {
-        background-position: -36px 0;
-
-        &:hover {
-          background-position: -36px -30px;
+        .time-contacts {
+            padding-top: 20px;
         }
-      }
-
-      &.twitter {
-        background-position: -73px 0;
-
-        &:hover {
-          background-position: -73px -30px;
+        .address-contacts {
+            width: 345px;
+            padding-left: 40px;
         }
-      }
-
-      &.youtube {
-        background-position: -109px 0;
-
-        &:hover {
-          background-position: -109px -30px;
+        .phone-contacts {
+            padding-left: 35px;
+            width: 280px;
         }
-      }
     }
-  }
-
-  .copyright {
-    text-align: right;
-    font-size: 10px;
-    color: #fff;
-    line-height: 1.2;
-    padding-bottom: 15px;
-  }
+    .socials-f {
+        float: right;
+        padding-top: 15px;
+        text-align: center;
+        .social-text {
+            font-size: 12px;
+            color: #fff;
+        }
+        .socials-inner {
+            margin-top: 15px;
+        }
+        .social {
+            margin-left: 2px;
+            width: 31px;
+            height: 30px;
+            display: inline-block;
+            background: url(../img/icons/socials-f.png);
+             &.vk {
+                &:hover {
+                background-position: 0 -30px;
+                }
+            }
+            &.fb {
+                background-position: -36px 0;
+                &:hover {
+                    background-position: -36px -30px;
+                }
+            }
+            &.twitter {
+                background-position: -73px 0;
+                &:hover {
+                    background-position: -73px -30px;
+                }
+            }
+            &.youtube {
+                background-position: -109px 0;
+                &:hover {
+                    background-position: -109px -30px;
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: right;
+        font-size: 10px;
+        color: #fff;
+        line-height: 1.2;
+        padding-bottom: 15px;
+    }
 }

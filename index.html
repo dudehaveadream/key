@@ -1,278 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Title</title>
+    <title>Title</title>
 
-  <!-- Style's -->
-  <link href="css/styles.css" rel="stylesheet">
+    <!-- Style's -->
+    <link href="css/styles.css" rel="stylesheet">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <![endif]-->
 </head>
 <body>
 
-  <div class="header">
-    <div class="container header-top">
+    <div class="header">
+        <div class="container header-top">
+            <div class="logo-section">
+                <img src="img/logo.png" alt="" class="logo"></div>
+            <ul class="main-contacts header-contacts">
+                <li class="main-contacts_item time-contacts">
+                    <img src="img/icons/watch-h.png" alt="" class="main-contacts_img">
+                    <div class="text-section">
+                        <p class="text">
+                            <span>пн-пт</span>
+                            9:00-18:00
+                        </p>
+                        <p class="text">
+                            <span>сб-вс</span>
+                            10:00-15:00
+                        </p>
+                    </div>
+                </li>
+                <li class="main-contacts_item address-contacts">
+                    <div class="text-section">
+                        <p class="text">
+                            г. Краснодар,
+                            <br>ул. Ипподромная, 1, оф. 1</p>
+                    </div>
+                </li>
+                <li class="main-contacts_item phone-contacts">
+                    <img src="img/icons/phone-h.png" alt="" class="main-contacts_img">
+                    <div class="text-section">
+                        <p class="text">+7 (938) 402-27-55</p>
+                        <p class="text">+7 (938) 867-43-00</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Header top:end -->
 
-      <div class="logo-section">
-        <img src="img/logo.png" alt="" class="logo">
-      </div>
-
-      <ul class="main-contacts header-contacts">
-        <li class="main-contacts_item time-contacts">
-          <img src="img/icons/watch-h.png" alt="" class="main-contacts_img">
-          <div class="text-section">
-            <p class="text"><span>пн-пт</span> 9:00-18:00</p>
-            <p class="text"><span>сб-вс</span> 10:00-15:00</p>
-          </div>
-        </li>
-        <li class="main-contacts_item address-contacts">
-          <div class="text-section">
-            <p class="text">г. Краснодар,<br> ул. Ипподромная, 1, оф. 1</p>
-          </div>
-        </li>
-        <li class="main-contacts_item phone-contacts">
-          <img src="img/icons/phone-h.png" alt="" class="main-contacts_img">
-          <div class="text-section">
-            <p class="text">+7 (938) 402-27-55</p>
-            <p class="text">+7 (938) 867-43-00</p>
-          </div>
-        </li>
-      </ul>
-
+        <div class="header-bot">
+            <div class="container">
+                <nav class='header-nav'>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/" class="nav-item_link">КАТАЛОГ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item_link">УСЛУГИ</a>
+                            <div class="dropdown">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <a href="/" class="dropdown-link">Аренда спецтехники</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="/" class="dropdown-link">Аренда дорожных плит</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="/" class="dropdown-link">Изготовление ЖБК на заказ</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="/" class="dropdown-link">Поставка продукци</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="/" class="dropdown-link">Нормы загрузки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item_link">ПРАЙС-ЛИСТ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item_link">О КОМПАНИИ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item_link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="left-section">
+                    <form action="" class="search">
+                        <div class="search-input_wrap">
+                            <input type="text" class="search-input">
+                            <button class="search-btn"></button>
+                        </div>
+                    </form>
+                    <a href="/" class="request-call">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+            </div>
+        </div>
+        <!-- Header bottom:end -->
     </div>
     <!-- Header:end -->
 
-    <div class="header-bot">
-      <div class="container">
-        <nav class='header-nav'>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="/" class="nav-item_link">КАТАЛОГ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-item_link">УСЛУГИ</a>
-              <div class="dropdown">
-                <ul class="dropdown-list">
-                  <li class="dropdown-item"><a href="/" class="dropdown-link">Аренда спецтехники</a></li>
-                  <li class="dropdown-item"><a href="/" class="dropdown-link">Аренда дорожных плит</a></li>
-                  <li class="dropdown-item"><a href="/" class="dropdown-link">Изготовление ЖБК на заказ</a></li>
-                  <li class="dropdown-item"><a href="/" class="dropdown-link">Поставка продукци</a></li>
-                  <li class="dropdown-item"><a href="/" class="dropdown-link">Нормы загрузки</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-item_link">ПРАЙС-ЛИСТ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-item_link">О КОМПАНИИ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-item_link">КОНТАКТЫ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="left-section">
-          <form action="" class="search">
-            <div class="search-input_wrap">
-              <input type="text" class="search-input">
-              <button class="search-btn"></button>
+    <div class="content">
+        <div class="container">
+
+            <div class="sidebar">
+                <div class="sidebar-catalog">
+                    <ul class="sidebar-nav">
+                        <li class="open">
+                            <a href="#">Обустройство дорог</a>
+                            <ul class="sidebar-subnav">
+                                <li>
+                                    <a href="#">Плиты дорожные</a>
+                                </li>
+                                <li>
+                                    <a href="#">Плиты аэродромные</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бортовой камень</a>
+                                </li>
+                                <li>
+                                    <a href="#">Заборы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Столбы освещения</a>
+                                </li>
+                                <li>
+                                    <a href="#">Плитка тротуарная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Скамьи</a>
+                                </li>
+                                <li>
+                                    <a href="#">Урны</a>
+                                </li>
+                                <li>
+                                    <a href="#">Цветочницы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Лотки и решетки</a>
+                        </li>
+                        <li>
+                            <a href="#">Кольца и колодцы</a>
+                        </li>
+                        <li>
+                            <a href="#">Элементы сооружений</a>
+                        </li>
+                        <li>
+                            <a href="#">Инженерные коммуникации</a>
+                        </li>
+                        <li>
+                            <a href="#">Сопутствующие товары</a>
+                        </li>
+                    </ul>
+                    <div class="download-pdf">
+                        <a href="#">Скачать pdf-каталог</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-partners">
+                    <h5>Наши ПАРТНЕРЫ</h5>
+                    <a href="#" class="partner">
+                        <img src="img/partners/1.jpg" alt=""></a>
+                    <a href="#" class="partner">
+                        <img src="img/partners/2.jpg" alt=""></a>
+                    <a href="#" class="partner">
+                        <img src="img/partners/3.jpg" alt=""></a>
+                    <a href="#" class="partner">
+                        <img src="img/partners/4.jpg" alt=""></a>
+                </div>
+
             </div>
-          </form>
-          <a href="/" class="request-call">ЗАКАЗАТЬ ЗВОНОК</a>
+            <!-- Sidebar:end -->
+
+            <div class="main-content">
+
+                <div class="main-product">
+                    <a href="/" class="product-link">
+                        <div class="product-img">
+                            <div class="product-img_inner">
+                                <img src="img/products/item1.png" alt=""></div>
+                        </div>
+                        <p class="product-name">Перемычка ВТТ-1200</p>
+                        <p class="product-text">
+                            Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.
+                        </p>
+                        <div class="product-footer">
+                            <p class="product-price">102 000 р.</p>
+                            <p class="product-count">Осталось: 10 шт.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="main-product">
+                    <a href="/" class="product-link">
+                        <div class="product-img">
+                            <div class="product-img_inner">
+                                <img src="img/products/item1.png" alt=""></div>
+                        </div>
+                        <p class="product-name">Перемычка ВТТ-1200</p>
+                        <p class="product-text">
+                            Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.
+                        </p>
+                        <div class="product-footer">
+                            <p class="product-price">102 000 р.</p>
+                            <p class="product-count">Осталось: 10 шт.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="main-product">
+                    <a href="/" class="product-link">
+                        <div class="product-img">
+                            <div class="product-img_inner">
+                                <img src="img/products/item1.png" alt=""></div>
+                        </div>
+                        <p class="product-name">Перемычка ВТТ-1200</p>
+                        <p class="product-text">
+                            Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.
+                        </p>
+                        <div class="product-footer">
+                            <p class="product-price">102 000 р.</p>
+                            <p class="product-count">Осталось: 10 шт.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="main-product">
+                    <a href="/" class="product-link">
+                        <div class="product-img">
+                            <div class="product-img_inner">
+                                <img src="img/products/item1.png" alt=""></div>
+                        </div>
+                        <p class="product-name">Перемычка ВТТ-1200</p>
+                        <p class="product-text">
+                            Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.
+                        </p>
+                        <div class="product-footer">
+                            <p class="product-price">102 000 р.</p>
+                            <p class="product-count">Осталось: 10 шт.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Main content:end -->
         </div>
-      </div>
     </div>
-  </div>
-  <!-- Nav:end -->
+    <!-- Content:end -->
 
-  <div class="content">
-    <div class="container">
+    <div class="footer">
+        <div class="container">
 
-      <div class="sidebar">
+            <ul class="main-contacts footer-contacts">
+                <li class="main-contacts_item time-contacts">
+                    <img src="img/icons/watch-f.png" alt="" class="main-contacts_img">
+                    <div class="text-section">
+                        <p class="text">
+                            <span>пн-пт</span>
+                            9:00-18:00
+                        </p>
+                        <p class="text">
+                            <span>сб-вс</span>
+                            10:00-15:00
+                        </p>
+                    </div>
+                </li>
+                <li class="main-contacts_item address-contacts">
+                    <div class="group-contacts">
+                        <img src="img/icons/map-f.png" alt="" class="main-contacts_img">
+                        <div class="text-section">
+                            <p class="text">
+                                г. Краснодар,
+                                <br>ул. Ипподромная, 1, оф. 1</p>
+                        </div>
+                    </div>
+                    <div class="group-contacts">
+                        <img src="img/icons/envelope-f.png" alt="" class="main-contacts_img">
+                        <div class="text-section">
+                            <p class="text">kluchpro@gmail.com</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-contacts_item phone-contacts">
+                    <img src="img/icons/phone-f.png" alt="" class="main-contacts_img">
+                    <div class="text-section">
+                        <p class="text">+7 (938) 402-27-55</p>
+                        <p class="text">+7 (938) 867-43-00</p>
+                    </div>
+                </li>
+            </ul>
 
-        <div class="sidebar-catalog">
-          <ul class="sidebar-nav">
-            <li class="open">
-              <a href="#">Обустройство дорог</a>
-              <ul class="sidebar-subnav">
-                <li><a href="#">Плиты дорожные</a></li>
-                <li><a href="#">Плиты аэродромные</a></li>
-                <li><a href="#">Бортовой камень</a></li>
-                <li><a href="#">Заборы</a></li>
-                <li><a href="#">Столбы освещения</a></li>
-                <li><a href="#">Плитка тротуарная</a></li>
-                <li><a href="#">Скамьи</a></li>
-                <li><a href="#">Урны</a></li>
-                <li><a href="#">Цветочницы</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Лотки и решетки</a>
-            </li>
-            <li>
-              <a href="#">Кольца и колодцы</a>
-            </li>
-            <li>
-              <a href="#">Элементы сооружений</a>
-            </li>
-            <li>
-              <a href="#">Инженерные коммуникации</a>
-            </li>
-            <li>
-              <a href="#">Сопутствующие товары</a>
-            </li>
-          </ul>
-          <div class="download-pdf">
-            <a href="#">Скачать pdf-каталог</a>
-          </div>
+            <div class="socials-f">
+                <p class="social-text">Узнать больше о нас:</p>
+                <div class="socials-inner">
+                    <a href="/" class="social vk"></a>
+                    <a href="/" class="social fb"></a>
+                    <a href="/" class="social twitter"></a>
+                    <a href="/" class="social youtube"></a>
+                </div>
+            </div>
         </div>
-
-        <div class="sidebar-partners">
-          <h5>Наши ПАРТНЕРЫ</h5>
-          <a href="#" class="partner"><img src="img/partners/1.jpg" alt=""></a>
-          <a href="#" class="partner"><img src="img/partners/2.jpg" alt=""></a>
-          <a href="#" class="partner"><img src="img/partners/3.jpg" alt=""></a>
-          <a href="#" class="partner"><img src="img/partners/4.jpg" alt=""></a>
+        <div class="container copyright">
+            © ООО компания-производитель «КЛЮЧ».
+            <br />
+            Все права защищены. 2015 г.
         </div>
-
-      </div>
-      <!-- Sidebar:end -->
-
-      <div class="main-content">
-
-        <div class="main-product">
-          <a href="/" class="product-link">
-            <div class="product-img">
-              <div class="product-img_inner">
-                <img src="img/products/item1.png" alt="">
-              </div>
-            </div>
-            <p class="product-name">Перемычка ВТТ-1200</p>
-            <p class="product-text">Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.</p>
-            <div class="product-footer">
-              <p class="product-price">102 000 р.</p>
-              <p class="product-count">Осталось: 10 шт.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="main-product">
-          <a href="/" class="product-link">
-            <div class="product-img">
-              <div class="product-img_inner">
-                <img src="img/products/item1.png" alt="">
-              </div>
-            </div>
-            <p class="product-name">Перемычка ВТТ-1200</p>
-            <p class="product-text">Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.</p>
-            <div class="product-footer">
-              <p class="product-price">102 000 р.</p>
-              <p class="product-count">Осталось: 10 шт.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="main-product">
-          <a href="/" class="product-link">
-            <div class="product-img">
-              <div class="product-img_inner">
-                <img src="img/products/item1.png" alt="">
-              </div>
-            </div>
-            <p class="product-name">Перемычка ВТТ-1200</p>
-            <p class="product-text">Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.</p>
-            <div class="product-footer">
-              <p class="product-price">102 000 р.</p>
-              <p class="product-count">Осталось: 10 шт.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="main-product">
-          <a href="/" class="product-link">
-            <div class="product-img">
-              <div class="product-img_inner">
-                <img src="img/products/item1.png" alt="">
-              </div>
-            </div>
-            <p class="product-name">Перемычка ВТТ-1200</p>
-            <p class="product-text">Вылита из бетона марки ТТ.Используется в перекрытии зданий и балок.</p>
-            <div class="product-footer">
-              <p class="product-price">102 000 р.</p>
-              <p class="product-count">Осталось: 10 шт.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Main content:end -->
-
     </div>
-  </div>
-  <!-- Content:end -->
+    <!-- Footer:end -->
 
-  <div class="footer">
-    <div class="container">
-
-      <ul class="main-contacts footer-contacts">
-        <li class="main-contacts_item time-contacts">
-          <img src="img/icons/watch-f.png" alt="" class="main-contacts_img">
-          <div class="text-section">
-            <p class="text"><span>пн-пт</span> 9:00-18:00</p>
-            <p class="text"><span>сб-вс</span> 10:00-15:00</p>
-          </div>
-        </li>
-        <li class="main-contacts_item address-contacts">
-          <div class="group-contacts">
-            <img src="img/icons/map-f.png" alt="" class="main-contacts_img">
-            <div class="text-section">
-              <p class="text">г. Краснодар,<br> ул. Ипподромная, 1, оф. 1</p>
-            </div>
-          </div>
-          <div class="group-contacts">
-            <img src="img/icons/envelope-f.png" alt="" class="main-contacts_img">
-            <div class="text-section">
-              <p class="text">kluchpro@gmail.com</p>
-            </div>
-          </div>
-        </li>
-        <li class="main-contacts_item phone-contacts">
-          <img src="img/icons/phone-f.png" alt="" class="main-contacts_img">
-          <div class="text-section">
-            <p class="text">+7 (938) 402-27-55</p>
-            <p class="text">+7 (938) 867-43-00</p>
-          </div>
-        </li>
-      </ul>
-
-      <div class="socials-f">
-        <p class="social-text">Узнать больше о нас:</p>
-        <div class="socials-inner">
-          <a href="/" class="social vk"></a>
-          <a href="/" class="social fb"></a>
-          <a href="/" class="social twitter"></a>
-          <a href="/" class="social youtube"></a>
-        </div>
-      </div>
-    </div>
-    <div class="container copyright">
-      © ООО компания-производитель «КЛЮЧ».<br />
-      Все права защищены. 2015 г.
-    </div>
-  </div>
-  <!-- Footer:end -->
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 </html>
