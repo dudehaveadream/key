@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: 'Helios Light';
     src: url('../fonts/Helios Light.eot');
     src: url('../fonts/Helios Light.eot?#iefix') format('embedded-opentype'),
@@ -39,6 +39,12 @@ body {
   	font-family: $regular;
 }
 
+h1 {
+    font-family: $bold;
+    font-size: 24px;
+    color: #a24501;
+    text-transform: uppercase;
+}
 h5 {
     font-family: $bold;
     font-size: 18px;
@@ -169,3 +175,9 @@ h5 {
     }
 }
 
+.related-items-holder {
+    @include clearfix;
+    .main-product {
+        float: left;
+    }
+}
