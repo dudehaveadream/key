@@ -67,6 +67,7 @@ h5 {
 }
 .content {
     padding-top: 25px;
+    padding-bottom: 30px;
     @include clearfix;
     .sidebar {
         width: 275px;
@@ -89,7 +90,7 @@ h5 {
     text-decoration: none;
     background: #a24501;
     &:hover {
-        background: #974001;
+        background: #6e2f01;
     }
 }
 
@@ -321,9 +322,15 @@ ul.breadcrumbs {
             td {
                 &.main {
                     padding: 15px 0 15px 40px;
+                    border-right: 2px solid #ecebeb;
                 } 
                 &.small {
                     width: 100px;
+                    padding-left: 30px;
+                }
+                &.last {
+                    padding-left: 30px;
+                    border-left: 2px solid #ecebeb;
                 } 
             }
         }
@@ -346,6 +353,65 @@ ul.breadcrumbs {
                     &.main {
                         padding: 10px 0 10px 40px;
                     } 
+                    &.small {
+                        border-right: 1px solid #ecebeb;
+                        &:last-child {
+                            background: red;
+                            border-color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottom-nav {
+    text-align: center;
+    width: 635px;
+    margin: 40px auto 0;
+    a {
+        margin: 0 30px;
+        display: inline-block;
+                vertical-align: middle;
+        .icon-holder {
+            height: 70px;
+            line-height: 70px;
+            vertical-align: middle;
+            .icon {
+                vertical-align: middle;
+                display: inline-block;
+                width: 61px;
+                background-image: url(../img/icons/bottom-nav.png);
+                &.icon-review {
+                    background-position: 0 0;
+                    height: 43px;
+                }
+                &.icon-vacancy {
+                    background-position: 0 -43px;
+                    height: 54px;
+                }
+                &.icon-discount {
+                    background-position: 0 -102px;
+                    height: 36px;
+                }
+            }
+        }
+        &:hover {
+            .btn-brown {
+                background: #6e2f01;
+            }
+            .icon-holder {
+                .icon {
+                    &.icon-review {
+                        background-position: -61px 0;
+                    }
+                    &.icon-vacancy {
+                        background-position: -61px -43px;
+                    }
+                    &.icon-discount {
+                        background-position: -61px -102px;
+                    }
                 }
             }
         }

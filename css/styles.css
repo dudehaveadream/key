@@ -121,6 +121,7 @@ h5 {
 
 .content {
   padding-top: 25px;
+  padding-bottom: 30px;
 }
 .content:after {
   content: "";
@@ -149,7 +150,7 @@ h5 {
   background: #a24501;
 }
 .btn-brown:hover {
-  background: #974001;
+  background: #6e2f01;
 }
 
 ul.breadcrumbs {
@@ -377,9 +378,15 @@ ul.breadcrumbs li a:hover {
 }
 .item-description-table tr td.main {
   padding: 15px 0 15px 40px;
+  border-right: 2px solid #ecebeb;
 }
 .item-description-table tr td.small {
   width: 100px;
+  padding-left: 30px;
+}
+.item-description-table tr td.last {
+  padding-left: 30px;
+  border-left: 2px solid #ecebeb;
 }
 .item-description-table thead tr td {
   font-family: "Helios Bold";
@@ -394,6 +401,59 @@ ul.breadcrumbs li a:hover {
 }
 .item-description-table tbody tr td.main {
   padding: 10px 0 10px 40px;
+}
+.item-description-table tbody tr td.small {
+  border-right: 1px solid #ecebeb;
+}
+.item-description-table tbody tr td.small:last-child {
+  background: red;
+  border-color: red;
+}
+
+.bottom-nav {
+  text-align: center;
+  width: 635px;
+  margin: 40px auto 0;
+}
+.bottom-nav a {
+  margin: 0 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bottom-nav a .icon-holder {
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+}
+.bottom-nav a .icon-holder .icon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 61px;
+  background-image: url(../img/icons/bottom-nav.png);
+}
+.bottom-nav a .icon-holder .icon.icon-review {
+  background-position: 0 0;
+  height: 43px;
+}
+.bottom-nav a .icon-holder .icon.icon-vacancy {
+  background-position: 0 -43px;
+  height: 54px;
+}
+.bottom-nav a .icon-holder .icon.icon-discount {
+  background-position: 0 -102px;
+  height: 36px;
+}
+.bottom-nav a:hover .btn-brown {
+  background: #6e2f01;
+}
+.bottom-nav a:hover .icon-holder .icon.icon-review {
+  background-position: -61px 0;
+}
+.bottom-nav a:hover .icon-holder .icon.icon-vacancy {
+  background-position: -61px -43px;
+}
+.bottom-nav a:hover .icon-holder .icon.icon-discount {
+  background-position: -61px -102px;
 }
 
 /* Pages */
@@ -560,7 +620,6 @@ ul.breadcrumbs li a:hover {
 
 .footer {
   min-width: 1200px;
-  margin-top: 50px;
   border-top: 5px solid #a24501;
   background: #6e2f01;
   padding: 15px 0;
