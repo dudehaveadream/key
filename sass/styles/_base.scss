@@ -37,13 +37,15 @@
 body {
   	font-size: 14px;
   	font-family: $regular;
+    background: #f0f0f0;
 }
 
 h1 {
-    font-family: $bold;
+    font-family: $extrabold;
     font-size: 24px;
     color: #a24501;
     text-transform: uppercase;
+    text-align: center;
 }
 h5 {
     font-family: $bold;
@@ -132,6 +134,7 @@ h5 {
     width: 210px;
     background: #fff;
     border: 1px solid #b7b7b7;
+    opacity: .9;
     .product-link {
         display: block;
         text-decoration: none;
@@ -140,44 +143,101 @@ h5 {
         height: 335px;
     }
     .product-img {
-        height: 170px;
         display: table;
         width: 100%;
-        background: red;
+        height: 175px;
         .product-img_inner {
             display: table-cell;
             text-align: center; 
             vertical-align: middle;
+            img {
+                max-height: 170px;
+            }
         }
     }
     .product-name {
         color: #212121;
-        font-family: $bold;
+        font-family: $extrabold;
         padding: 0 12px;
         margin-top: 10px;
     }
     .product-text {
+        min-height: 58px;
         color: #212121;
-        padding: 0 12px;
+        padding: 0 12px 10px;
     }
     .product-footer {
         padding: 0 12px;
         border-top: 1px solid #cfcfcf;
     }
     .product-price {
+        padding-top: 4px;
         font-size: 24px;
         color: #a24501;
-        font-family: $bold;
+        font-family: $extrabold;
+        margin-bottom: 4px;
     }
     .product-count {
         font-size: 12px;
         color: #212121;
     }
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .related-items-holder {
-    @include clearfix;
-    .main-product {
-        float: left;
+    &-inner {
+        @include clearfix;
+        .main-product {
+            float: left;
+            margin-top: 15px;
+            margin-right: 10px;
+            &:nth-child(4n+4) {
+                margin-right: 0;
+            }
+        }
+    }
+    .load-more {
+        width: 635px;
+        margin: 20px auto 0;
+        position: relative;
+        text-align: center;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            width: 1px;
+            height: 30px;
+            background: #c1c1c1;
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+        &-inner {
+            a {
+                display: inline-block;
+                background: #f0f0f0;
+                padding: 0 15px;
+                font-size: 18px;
+                color: #000000;
+                text-decoration: none;
+                position: relative;
+                z-index: 5;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 10px;
+                height: 1px;
+                width: 100%;
+                background: #c1c1c1;
+                z-index: 1;
+            }
+        }
     }
 }
