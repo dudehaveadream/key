@@ -17,6 +17,7 @@
 
 .header-bot {
     background: #a24501;
+    min-width: 1200px;
     @include clearfix;
     .header-nav {
         float: left;

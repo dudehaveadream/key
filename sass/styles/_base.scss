@@ -1,4 +1,4 @@
-    @font-face {
+@font-face {
     font-family: 'Helios Light';
     src: url('../fonts/Helios Light.eot');
     src: url('../fonts/Helios Light.eot?#iefix') format('embedded-opentype'),
@@ -38,6 +38,7 @@ body {
   	font-size: 14px;
   	font-family: $regular;
     background: #f0f0f0;
+    color: #565656;
 }
 
 h1 {
@@ -46,15 +47,22 @@ h1 {
     color: #a24501;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 25px;
 }
 h5 {
     font-family: $bold;
     font-size: 18px;
     text-transform: uppercase;
 }
+.subtitle {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
 
 .container {
-	width: 1170px;
+	width: 1200px;
+    padding: 0 15px;
 	margin: auto;
 }
 .content {
@@ -67,6 +75,46 @@ h5 {
     .main-content {
         width: 870px;
         float: right;
+    }
+}
+
+.btn {
+    display: inline-block;
+}
+.btn-brown {
+    padding: 14px 20px;
+    font-family: $extrabold;
+    font-size: 15px;
+    color: $white;
+    text-decoration: none;
+    background: #a24501;
+    &:hover {
+        background: #974001;
+    }
+}
+
+ul.breadcrumbs {
+    margin-bottom: 35px;
+    li {
+        display: inline-block;
+        position: relative;
+        &:after {
+            content: '//';
+            margin-left: 4px;
+        }
+        &:last-child:after {
+            content: none;
+        }
+        &.active a {
+            color: #a24501;
+        }
+        a {
+            font-size: 12px;
+            color: #212121;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }
 
@@ -187,6 +235,9 @@ h5 {
 }
 
 .related-items-holder {
+    h1 {
+        margin-bottom: 0;
+    }
     &-inner {
         @include clearfix;
         .main-product {
@@ -237,6 +288,65 @@ h5 {
                 width: 100%;
                 background: #c1c1c1;
                 z-index: 1;
+            }
+        }
+    }
+}
+
+.item-description {
+    p {
+        line-height: 1.3;
+        margin: 15px 0;
+    }
+    ul {
+        li {
+            padding-left: 25px;
+            font-size: 16px;
+            position: relative;
+            margin: 4px 0;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 16px;
+                height: 1px;
+                background: #898989;
+            }
+        }
+    }
+    &-table {
+        width: 100%;
+        tr {
+            td {
+                &.main {
+                    padding: 15px 0 15px 40px;
+                } 
+                &.small {
+                    width: 100px;
+                } 
+            }
+        }
+        thead {
+            tr {
+                td {
+                    font-family: $extrabold;
+                    font-size: 14px;
+                    color: $white;
+                    background: #808080;
+                    padding: 10px 0;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    font-size: 15px;
+                    background: $white;
+                    &.main {
+                        padding: 10px 0 10px 40px;
+                    } 
+                }
             }
         }
     }
